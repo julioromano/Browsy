@@ -10,17 +10,19 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     var lastUrl: URL? {
         didSet {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "lastUrl"), object: nil)
+            NotificationCenter.default.post(
+                name: NSNotification.Name(rawValue: "lastUrl"),
+                object: nil)
         }
     }
-
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
-
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
@@ -36,14 +38,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func handleGetURLEvent(replyEvent: NSAppleEventDescriptor?) {
-        if let aeEventDescriptor = replyEvent?.paramDescriptor(forKeyword: AEKeyword(keyDirectObject)) {
+        if let aeEventDescriptor = replyEvent?
+            .paramDescriptor(forKeyword: AEKeyword(keyDirectObject)) {
             let urlStr = aeEventDescriptor.stringValue
             lastUrl = URL(string: urlStr!)!
         }
         
     }
     
-    /// appId: `nil` use the default HTTP client, or set what you want, e.g. Safari `com.apple.Safari`
+    /// appId: `nil` use the default HTTP client, or set what you want,
+    /// e.g. Safari `com.apple.Safari`
     func openInSpecificBrowser(url: URL, appId: String? = nil) -> Bool {
         return NSWorkspace.shared().open(
             [url],

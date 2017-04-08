@@ -17,14 +17,15 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
         tableView.delegate = self
         tableView.dataSource = self
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(self.refreshView(notification:)), name: NSNotification.Name(rawValue: "lastUrl"), object: nil)
-        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.refreshView(notification:)),
+            name: NSNotification.Name(rawValue: "lastUrl"),
+            object: nil
+        )
         reloadBrowserList()
     }
     
@@ -41,12 +42,17 @@ class ViewController: NSViewController {
 
     func getInstalledBrowsers () -> [ Bundle ] {
         var browsers = [ Bundle ]()
-        
-        let array = LSCopyAllHandlersForURLScheme("https" as CFString)?.takeRetainedValue()
-        // let array = LSCopyAllRoleHandlersForContentType("public.html" as CFString, LSRolesMask.all)?.takeRetainedValue()
+        let array = LSCopyAllHandlersForURLScheme("https" as CFString)?
+            .takeRetainedValue()
+        // let array = LSCopyAllRoleHandlersForContentType(
+        //     "public.html" as CFString, LSRolesMask.all)?.takeRetainedValue()
         for i in 0..<CFArrayGetCount(array!) {
-            let bundleId = unsafeBitCast(CFArrayGetValueAtIndex(array!, i), to: CFString.self) as String
-            if let path = NSWorkspace.shared().absolutePathForApplication(withBundleIdentifier: bundleId) {
+            let bundleId = unsafeBitCast(
+                CFArrayGetValueAtIndex(array!, i),
+                to: CFString.self
+                ) as String
+            if let path = NSWorkspace.shared()
+                .absolutePathForApplication(withBundleIdentifier: bundleId) {
                 if let bundle = Bundle(path: path) {
                     // let name: String = bundle.infoDictionary!["CFBundleName"] as String
                     if bundle.bundleIdentifier == Bundle.main.bundleIdentifier {
@@ -56,7 +62,6 @@ class ViewController: NSViewController {
                 }
             }
         }
-        
         return browsers
     }
     
@@ -82,21 +87,18 @@ extension ViewController: NSTableViewDelegate {
         static let DescriptionCell = "DescriptionCellID"
     }
     
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        
+    func tableView(_ tableView: NSTableView,
+                   viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         var image: NSImage?
         var text: String = ""
         var cellIdentifier: String = ""
-        
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .long
-        
         // 1
         guard let item = browserItems?[row] else {
             return nil
         }
-        
         // 2
         if tableColumn == tableView.tableColumns[0] {
             
@@ -107,9 +109,9 @@ extension ViewController: NSTableViewDelegate {
             text = item.bundleURL.lastPathComponent
             cellIdentifier = CellIdentifiers.NameCell
         }
-        
         // 3
-        if let cell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
+        if let cell = tableView
+            .make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
             cell.textField?.stringValue = text
             cell.imageView?.image = image ?? nil
             return cell
@@ -124,7 +126,6 @@ extension ViewController: NSTableViewDelegate {
             appDelegate.openLastUrl(appId: browserItems?[row].bundleIdentifier)
         }
         NSApplication.shared().terminate(self)
-        
     }
     
 }
