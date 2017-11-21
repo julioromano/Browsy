@@ -29,8 +29,8 @@ class ViewController: NSViewController {
         reloadBrowserList()
     }
     
-    func refreshView(notification: NSNotification) {
-        let appDelegate = NSApplication.shared().delegate as! AppDelegate
+    @objc func refreshView(notification: NSNotification) {
+        let appDelegate = NSApplication.shared.delegate as! AppDelegate
         urlField.stringValue = (appDelegate.lastUrl?.absoluteString)!
     }
 
@@ -51,7 +51,7 @@ class ViewController: NSViewController {
                 CFArrayGetValueAtIndex(array!, i),
                 to: CFString.self
                 ) as String
-            if let path = NSWorkspace.shared()
+            if let path = NSWorkspace.shared
                 .absolutePathForApplication(withBundleIdentifier: bundleId) {
                 if let bundle = Bundle(path: path) {
                     // let name: String = bundle.infoDictionary!["CFBundleName"] as String
@@ -103,7 +103,7 @@ extension ViewController: NSTableViewDelegate {
         if tableColumn == tableView.tableColumns[0] {
             
             let appPath: String = item.bundlePath
-            let appIcon: NSImage = NSWorkspace.shared().icon(forFile: appPath)
+            let appIcon: NSImage = NSWorkspace.shared.icon(forFile: appPath)
             
             image = appIcon
             text = item.bundleURL.lastPathComponent
@@ -111,7 +111,7 @@ extension ViewController: NSTableViewDelegate {
         }
         // 3
         if let cell = tableView
-            .make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
+            .makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: cellIdentifier), owner: nil) as? NSTableCellView {
             cell.textField?.stringValue = text
             cell.imageView?.image = image ?? nil
             return cell
@@ -120,12 +120,12 @@ extension ViewController: NSTableViewDelegate {
     }
     
     func tableViewSelectionDidChange(_ notification: Notification) {
-        let appDelegate = NSApplication.shared().delegate as! AppDelegate
+        let appDelegate = NSApplication.shared.delegate as! AppDelegate
         let itemsSelected = tableView.selectedRowIndexes
         for row in itemsSelected {
             appDelegate.openLastUrl(appId: browserItems?[row].bundleIdentifier)
         }
-        NSApplication.shared().terminate(self)
+        NSApplication.shared.terminate(self)
     }
     
 }

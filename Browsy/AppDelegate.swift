@@ -37,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         )
     }
     
-    func handleGetURLEvent(replyEvent: NSAppleEventDescriptor?) {
+    @objc func handleGetURLEvent(replyEvent: NSAppleEventDescriptor?) {
         if let aeEventDescriptor = replyEvent?
             .paramDescriptor(forKeyword: AEKeyword(keyDirectObject)) {
             let urlStr = aeEventDescriptor.stringValue
@@ -49,10 +49,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     /// appId: `nil` use the default HTTP client, or set what you want,
     /// e.g. Safari `com.apple.Safari`
     func openInSpecificBrowser(url: URL, appId: String? = nil) -> Bool {
-        return NSWorkspace.shared().open(
+        return NSWorkspace.shared.open(
             [url],
             withAppBundleIdentifier: appId,
-            options: NSWorkspaceLaunchOptions.default,
+            options: NSWorkspace.LaunchOptions.default,
             additionalEventParamDescriptor: nil,
             launchIdentifiers: nil
         )
