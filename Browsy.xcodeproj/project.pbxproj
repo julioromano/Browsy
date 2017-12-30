@@ -8,13 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		19BCEE671E8FC82500871C0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BCEE661E8FC82500871C0A /* ViewController.swift */; };
+		19E1A0771FF7E1180072376A /* BrowsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1A0761FF7E1180072376A /* BrowsyTests.swift */; };
 		19E940C01E8EEACC003F354A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E940BF1E8EEACC003F354A /* AppDelegate.swift */; };
 		19E940C41E8EEACC003F354A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E940C31E8EEACC003F354A /* Assets.xcassets */; };
 		19E940C71E8EEACC003F354A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E940C51E8EEACC003F354A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		19E1A0791FF7E1180072376A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19E940B41E8EEACC003F354A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19E940BB1E8EEACC003F354A;
+			remoteInfo = Browsy;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		19BCEE661E8FC82500871C0A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19E1A0741FF7E1180072376A /* BrowsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E1A0761FF7E1180072376A /* BrowsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsyTests.swift; sourceTree = "<group>"; };
+		19E1A0781FF7E1180072376A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19E940BC1E8EEACC003F354A /* Browsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E940BF1E8EEACC003F354A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E940C31E8EEACC003F354A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		19E1A0711FF7E1180072376A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19E940B91E8EEACC003F354A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,10 +54,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19E1A0751FF7E1180072376A /* BrowsyTests */ = {
+			isa = PBXGroup;
+			children = (
+				19E1A0761FF7E1180072376A /* BrowsyTests.swift */,
+				19E1A0781FF7E1180072376A /* Info.plist */,
+			);
+			path = BrowsyTests;
+			sourceTree = "<group>";
+		};
 		19E940B31E8EEACC003F354A = {
 			isa = PBXGroup;
 			children = (
 				19E940BE1E8EEACC003F354A /* Browsy */,
+				19E1A0751FF7E1180072376A /* BrowsyTests */,
 				19E940BD1E8EEACC003F354A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				19E940BC1E8EEACC003F354A /* Browsy.app */,
+				19E1A0741FF7E1180072376A /* BrowsyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +96,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		19E1A0731FF7E1180072376A /* BrowsyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19E1A07D1FF7E1180072376A /* Build configuration list for PBXNativeTarget "BrowsyTests" */;
+			buildPhases = (
+				19E1A0701FF7E1180072376A /* Sources */,
+				19E1A0711FF7E1180072376A /* Frameworks */,
+				19E1A0721FF7E1180072376A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19E1A07A1FF7E1180072376A /* PBXTargetDependency */,
+			);
+			name = BrowsyTests;
+			productName = BrowsyTests;
+			productReference = 19E1A0741FF7E1180072376A /* BrowsyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		19E940BB1E8EEACC003F354A /* Browsy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19E940CB1E8EEACC003F354A /* Build configuration list for PBXNativeTarget "Browsy" */;
@@ -87,10 +137,15 @@
 		19E940B41E8EEACC003F354A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = kJulio;
 				TargetAttributes = {
+					19E1A0731FF7E1180072376A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 19E940BB1E8EEACC003F354A;
+					};
 					19E940BB1E8EEACC003F354A = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = C4T5VAUNJX;
@@ -113,11 +168,19 @@
 			projectRoot = "";
 			targets = (
 				19E940BB1E8EEACC003F354A /* Browsy */,
+				19E1A0731FF7E1180072376A /* BrowsyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		19E1A0721FF7E1180072376A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19E940BA1E8EEACC003F354A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,6 +193,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		19E1A0701FF7E1180072376A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E1A0771FF7E1180072376A /* BrowsyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19E940B81E8EEACC003F354A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +211,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19E1A07A1FF7E1180072376A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19E940BB1E8EEACC003F354A /* Browsy */;
+			targetProxy = 19E1A0791FF7E1180072376A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19E940C51E8EEACC003F354A /* Main.storyboard */ = {
@@ -153,6 +232,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		19E1A07B1FF7E1180072376A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BrowsyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = net.kjulio.BrowsyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browsy.app/Contents/MacOS/Browsy";
+			};
+			name = Debug;
+		};
+		19E1A07C1FF7E1180072376A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BrowsyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = net.kjulio.BrowsyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browsy.app/Contents/MacOS/Browsy";
+			};
+			name = Release;
+		};
 		19E940C91E8EEACC003F354A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -290,6 +407,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		19E1A07D1FF7E1180072376A /* Build configuration list for PBXNativeTarget "BrowsyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E1A07B1FF7E1180072376A /* Debug */,
+				19E1A07C1FF7E1180072376A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		19E940B71E8EEACC003F354A /* Build configuration list for PBXProject "Browsy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
