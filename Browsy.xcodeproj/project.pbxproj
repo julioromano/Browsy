@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D20361690E9FF8793310FAD /* Pods_Browsy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C56C2C8F631373127A56CF /* Pods_Browsy.framework */; };
 		19BCEE671E8FC82500871C0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BCEE661E8FC82500871C0A /* ViewController.swift */; };
 		19E1A0771FF7E1180072376A /* BrowsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1A0761FF7E1180072376A /* BrowsyTests.swift */; };
 		19E940C01E8EEACC003F354A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E940BF1E8EEACC003F354A /* AppDelegate.swift */; };
@@ -34,6 +35,9 @@
 		19E940C31E8EEACC003F354A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19E940C61E8EEACC003F354A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19E940C81E8EEACC003F354A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EDFD72456CE879E07CB3DAE /* Pods-Browsy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Browsy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Browsy/Pods-Browsy.debug.xcconfig"; sourceTree = "<group>"; };
+		A7C56C2C8F631373127A56CF /* Pods_Browsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Browsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD213CA5B394548A3119EB90 /* Pods-Browsy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Browsy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Browsy/Pods-Browsy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D20361690E9FF8793310FAD /* Pods_Browsy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,8 @@
 				19E940BE1E8EEACC003F354A /* Browsy */,
 				19E1A0751FF7E1180072376A /* BrowsyTests */,
 				19E940BD1E8EEACC003F354A /* Products */,
+				76BB2C34351159FD1EED086A /* Pods */,
+				2179179E2E162607423F44CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +98,23 @@
 				19E940C81E8EEACC003F354A /* Info.plist */,
 			);
 			path = Browsy;
+			sourceTree = "<group>";
+		};
+		2179179E2E162607423F44CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7C56C2C8F631373127A56CF /* Pods_Browsy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76BB2C34351159FD1EED086A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EDFD72456CE879E07CB3DAE /* Pods-Browsy.debug.xcconfig */,
+				CD213CA5B394548A3119EB90 /* Pods-Browsy.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19E940CB1E8EEACC003F354A /* Build configuration list for PBXNativeTarget "Browsy" */;
 			buildPhases = (
+				3B7337397089CAA70CF64C8F /* [CP] Check Pods Manifest.lock */,
 				19E940B81E8EEACC003F354A /* Sources */,
 				19E940B91E8EEACC003F354A /* Frameworks */,
 				19E940BA1E8EEACC003F354A /* Resources */,
+				97BA315AF058BF79754156F1 /* [CP] Embed Pods Frameworks */,
+				CF2264867234F0F8FC1DFDCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B7337397089CAA70CF64C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Browsy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97BA315AF058BF79754156F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Browsy/Pods-Browsy-frameworks.sh",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Browsy/Pods-Browsy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2264867234F0F8FC1DFDCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Browsy/Pods-Browsy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19E1A0701FF7E1180072376A /* Sources */ = {
@@ -376,6 +459,7 @@
 		};
 		19E940CC1E8EEACC003F354A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDFD72456CE879E07CB3DAE /* Pods-Browsy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -391,6 +475,7 @@
 		};
 		19E940CD1E8EEACC003F354A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD213CA5B394548A3119EB90 /* Pods-Browsy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
