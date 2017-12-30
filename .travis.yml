@@ -1,9 +1,9 @@
 os: osx
 osx_image: xcode9.2
 language: swift
-xcode_project: Browsy.xcodeproj # path to your xcodeproj folder
+xcode_workspace: Browsy.xcworkspace
 xcode_scheme: Browsy
 script:
-  - xcodebuild -scheme Browsy -configuration Release build test
+  - xcodebuild -workspace Browsy.xcworkspace -scheme Browsy -configuration Release build test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
