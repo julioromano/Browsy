@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct BrowsyApp: App {
     
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     @State private var lastUrl: URL? {
         didSet {
             NotificationCenter.default.post(
@@ -53,5 +55,32 @@ struct BrowsyApp: App {
             }
         }
         return browsers
+    }
+}
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    var statusBarItem: NSStatusItem?
+    var application: NSApplication = NSApplication.shared
+    var myProperty: String = ""
+    
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        let menu = NSMenu()
+        let menuItem = NSMenuItem()
+        
+        // SwiftUI View
+        let view = NSHostingView(rootView: ContentView(
+                                    url: URL(string: "www.apple.com"),
+                                    browsers: [Bundle]()
+        ))
+        
+        // Very important! If you don't set the frame the menu won't appear to open.
+        view.frame = NSRect(x: 0, y: 0, width: 115, height: 115)
+        menuItem.view = view
+        
+        menu.addItem(menuItem)
+        
+        statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+        statusBarItem?.button?.title = "Test"
+        statusBarItem?.menu = menu
     }
 }
