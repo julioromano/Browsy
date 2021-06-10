@@ -30,6 +30,9 @@ struct BrowsyApp: App {
                     browsers = getInstalledBrowsers()
                 })
         }
+        Settings {
+            EmptyView()
+        }
     }
     
     func getInstalledBrowsers () -> [ Bundle ] {
