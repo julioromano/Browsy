@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let url: URL?
+    let url: URL
     let browsers: [Bundle]
     
     var body: some View {
@@ -17,28 +17,27 @@ struct ContentView: View {
         let template = "Hello, world! %@"
         
         VStack {
-            Text(String(format: template, url?.absoluteString ?? "null"))
+            Text(String(format: template, url.absoluteString))
                 .padding()
             List(browsers, id: \.bundleIdentifier) { bundle in
                 HStack {
                     Text(bundle.bundleIdentifier ?? "none")
                     Button("OPEN") {
-                        if let urll = url as? URL {
-                            openInSpecificBrowser(url: urll, appId: bundle.bundleIdentifier)
-                        }
+                        openInSpecificBrowser(url: url, bundleUrl: bundle.bundleURL)
                     }
                 }
             }
         }
     }
     
-    func openInSpecificBrowser(url: URL, appId: String? = nil) -> Bool {
-        return NSWorkspace.shared.open(
+    func openInSpecificBrowser(url: URL, bundleUrl: URL) -> () {
+        NSWorkspace.shared.open(
             [url],
-            withAppBundleIdentifier: appId,
-            options: NSWorkspace.LaunchOptions.default,
-            additionalEventParamDescriptor: nil,
-            launchIdentifiers: nil
+            withApplicationAt: bundleUrl,
+            configuration: NSWorkspace.OpenConfiguration.init(),
+            completionHandler: { _, _ in
+                return
+            }
         )
     }
 }
@@ -46,7 +45,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(
-            url: URL(string: "www.apple.com"),
+            url: URL(string: "www.apple.com")!,
             browsers: [Bundle]()
         )
     }
