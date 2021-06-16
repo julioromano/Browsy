@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        let template = "Hello, world! %@"
+        let template = "URL: %@"
         
         VStack {
             Text(String(format: template, url.absoluteString))
@@ -24,6 +24,7 @@ struct ContentView: View {
                     Text(bundle.bundleIdentifier ?? "none")
                     Button("OPEN") {
                         openInSpecificBrowser(url: url, bundleUrl: bundle.bundleURL)
+                        NSApplication.shared.keyWindow?.close()
                     }
                 }
             }
