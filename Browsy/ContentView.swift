@@ -23,23 +23,15 @@ struct ContentView: View {
                 HStack {
                     Text(bundle.bundleIdentifier ?? "none")
                     Button("OPEN") {
-                        openInSpecificBrowser(url: url, bundleUrl: bundle.bundleURL)
+                        BrowserHelper().openInSpecificBrowser(
+                            url: url,
+                            bundleUrl: bundle.bundleURL
+                        )
                         NSApplication.shared.keyWindow?.close()
                     }
                 }
             }
         }
-    }
-    
-    func openInSpecificBrowser(url: URL, bundleUrl: URL) -> () {
-        NSWorkspace.shared.open(
-            [url],
-            withApplicationAt: bundleUrl,
-            configuration: NSWorkspace.OpenConfiguration.init(),
-            completionHandler: { _, _ in
-                return
-            }
-        )
     }
 }
 
