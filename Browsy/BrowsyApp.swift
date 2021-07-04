@@ -25,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        createMenu()
+        // createMenu()
         
         NSAppleEventManager.shared().setEventHandler(
             self,
@@ -35,9 +35,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         )
     }
     
-    @objc func quit() {
-        application.terminate(self)
-    }
+//    @objc func quit() {
+//        application.terminate(self)
+//    }
     
     @objc func handleGetURLEvent(replyEvent: NSAppleEventDescriptor?) {
         if let aeEventDescriptor = replyEvent?.paramDescriptor(forKeyword: AEKeyword(keyDirectObject)) {
@@ -62,18 +62,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.makeKeyAndOrderFront(nil)
     }
     
-    private func createMenu() {
-        let menu = NSMenu()
-        let appNameMenuItem = NSMenuItem(title: "Browsy v0.1", action: nil, keyEquivalent: "")
-        let swiftUiMenuItem = NSMenuItem()
-        let swiftUiView = NSHostingView(rootView: Text("Welcome!"))
-        swiftUiView.frame = NSRect(x: 0, y: 0, width: 115, height: 40)
-        swiftUiMenuItem.view = swiftUiView
-        let quitMenuItem = NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "")
-        menu.addItem(appNameMenuItem)
-        menu.addItem(swiftUiMenuItem)
-        menu.addItem(quitMenuItem)
-        statusBarItem.menu = menu
-        statusBarItem.button?.image = NSImage(named: "MenuBarIcon")
-    }
+//    private func createMenu() {
+//        let menu = NSMenu()
+//        let appNameMenuItem = NSMenuItem(title: "Browsy v0.1", action: nil, keyEquivalent: "")
+//        let swiftUiMenuItem = NSMenuItem()
+//        let swiftUiView = NSHostingView(rootView: Text("Welcome!"))
+//        swiftUiView.frame = NSRect(x: 0, y: 0, width: 115, height: 40)
+//        swiftUiMenuItem.view = swiftUiView
+//        let quitMenuItem = NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "")
+//        menu.addItem(appNameMenuItem)
+//        menu.addItem(swiftUiMenuItem)
+//        menu.addItem(quitMenuItem)
+//        statusBarItem.menu = menu
+//        statusBarItem.button?.image = NSImage(named: "MenuBarIcon")
+//    }
 }

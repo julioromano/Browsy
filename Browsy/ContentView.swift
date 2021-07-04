@@ -21,6 +21,7 @@ struct ContentView: View {
                 .padding()
             List(browsers, id: \.bundleIdentifier) { bundle in
                 HStack {
+                    Image("*.icns", bundle: bundle)
                     Text(bundle.bundleIdentifier ?? "none")
                     Button("OPEN") {
                         BrowserHelper().openInSpecificBrowser(
