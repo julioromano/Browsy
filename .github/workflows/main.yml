@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: macos-14
+    timeout-minutes: 10
+
+    steps:
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '15.4'
+    - uses: actions/checkout@v4
+    - name: Build
+      run: xcodebuild -project Browsy.xcodeproj -scheme Browsy -sdk macosx CODE_SIGNING_ALLOWED=NO
+    # Temporarily disabled until we have a way to run tests and sign the app.
+    # - name: Test
+    #   run: xcodebuild -project Browsy.xcodeproj -scheme Browsy -sdk macosx CODE_SIGNING_ALLOWED=NO test
+    # - name: Archive
+    #   run: xcodebuild -project Browsy.xcodeproj -scheme Browsy -sdk macosx -archivePath Browsy CODE_SIGNING_ALLOWED=NO archive
+    # - name: Zip
+    #   run: zip -r Browsy.xcarchive.zip Browsy.xcarchive
+    # - name: Upload
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: Browsy.xcarchive.zip
+    #     path: Browsy.xcarchive.zip
