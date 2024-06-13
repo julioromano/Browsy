@@ -3,48 +3,87 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19BCEE671E8FC82500871C0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BCEE661E8FC82500871C0A /* ViewController.swift */; };
-		19E1A0771FF7E1180072376A /* BrowsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1A0761FF7E1180072376A /* BrowsyTests.swift */; };
-		19E940C01E8EEACC003F354A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E940BF1E8EEACC003F354A /* AppDelegate.swift */; };
-		19E940C41E8EEACC003F354A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E940C31E8EEACC003F354A /* Assets.xcassets */; };
-		19E940C71E8EEACC003F354A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E940C51E8EEACC003F354A /* Main.storyboard */; };
+		1914FE292C1B782800F32B05 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 1914FE282C1B782800F32B05 /* Sparkle */; };
+		194634C92C0BB1AE002F8AFE /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194634C82C0BB1AE002F8AFE /* MenuView.swift */; };
+		19626BA12C0881C30034D54F /* BrowsyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19626BA02C0881C30034D54F /* BrowsyApp.swift */; };
+		19626BA52C0881C40034D54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19626BA42C0881C40034D54F /* Assets.xcassets */; };
+		19626BA82C0881C40034D54F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19626BA72C0881C40034D54F /* Preview Assets.xcassets */; };
+		19626BB32C0881C50034D54F /* BrowsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19626BB22C0881C50034D54F /* BrowsyTests.swift */; };
+		19626BBD2C0881C50034D54F /* BrowsyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19626BBC2C0881C50034D54F /* BrowsyUITests.swift */; };
+		19626BBF2C0881C50034D54F /* BrowsyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19626BBE2C0881C50034D54F /* BrowsyUITestsLaunchTests.swift */; };
+		197019582C08AA8800D63B8E /* ChooserScreenBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197019572C08AA8800D63B8E /* ChooserScreenBindingView.swift */; };
+		1979A8C42C09B58000E3E062 /* ChooserScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979A8C32C09B58000E3E062 /* ChooserScreenPresenter.swift */; };
+		1979A8C62C09B6BA00E3E062 /* BrowserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979A8C52C09B6BA00E3E062 /* BrowserManager.swift */; };
+		1979A8C82C09BC2300E3E062 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979A8C72C09BC2300E3E062 /* Dependencies.swift */; };
+		1979A8CA2C09CAD900E3E062 /* ChooserWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979A8C92C09CAD900E3E062 /* ChooserWindowManager.swift */; };
+		1979A8CC2C09D51000E3E062 /* BrowsyAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979A8CB2C09D51000E3E062 /* BrowsyAppDelegate.swift */; };
+		1981D6A72C0A662000D60F8B /* ChooserScreenPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981D6A62C0A662000D60F8B /* ChooserScreenPresenterTest.swift */; };
+		1981D6AA2C0A735B00D60F8B /* ChooserScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981D6A92C0A735B00D60F8B /* ChooserScreenView.swift */; };
+		1981D6AD2C0A741900D60F8B /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981D6AC2C0A741900D60F8B /* Browser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		19E1A0791FF7E1180072376A /* PBXContainerItemProxy */ = {
+		19626BAF2C0881C50034D54F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 19E940B41E8EEACC003F354A /* Project object */;
+			containerPortal = 19626B952C0881C30034D54F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19E940BB1E8EEACC003F354A;
+			remoteGlobalIDString = 19626B9C2C0881C30034D54F;
+			remoteInfo = Browsy;
+		};
+		19626BB92C0881C50034D54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19626B952C0881C30034D54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19626B9C2C0881C30034D54F;
 			remoteInfo = Browsy;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19BCEE661E8FC82500871C0A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		19E1A0741FF7E1180072376A /* BrowsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		19E1A0761FF7E1180072376A /* BrowsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsyTests.swift; sourceTree = "<group>"; };
-		19E1A0781FF7E1180072376A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19E940BC1E8EEACC003F354A /* Browsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		19E940BF1E8EEACC003F354A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19E940C31E8EEACC003F354A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		19E940C61E8EEACC003F354A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		19E940C81E8EEACC003F354A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		194634C82C0BB1AE002F8AFE /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		19626B9D2C0881C30034D54F /* Browsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19626BA02C0881C30034D54F /* BrowsyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsyApp.swift; sourceTree = "<group>"; };
+		19626BA42C0881C40034D54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19626BA72C0881C40034D54F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		19626BA92C0881C40034D54F /* Browsy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Browsy.entitlements; sourceTree = "<group>"; };
+		19626BAE2C0881C50034D54F /* BrowsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19626BB22C0881C50034D54F /* BrowsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsyTests.swift; sourceTree = "<group>"; };
+		19626BB82C0881C50034D54F /* BrowsyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowsyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19626BBC2C0881C50034D54F /* BrowsyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsyUITests.swift; sourceTree = "<group>"; };
+		19626BBE2C0881C50034D54F /* BrowsyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		197019572C08AA8800D63B8E /* ChooserScreenBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserScreenBindingView.swift; sourceTree = "<group>"; };
+		1970195E2C08C28000D63B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1979A8C32C09B58000E3E062 /* ChooserScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserScreenPresenter.swift; sourceTree = "<group>"; };
+		1979A8C52C09B6BA00E3E062 /* BrowserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserManager.swift; sourceTree = "<group>"; };
+		1979A8C72C09BC2300E3E062 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		1979A8C92C09CAD900E3E062 /* ChooserWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserWindowManager.swift; sourceTree = "<group>"; };
+		1979A8CB2C09D51000E3E062 /* BrowsyAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsyAppDelegate.swift; sourceTree = "<group>"; };
+		1981D6A62C0A662000D60F8B /* ChooserScreenPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserScreenPresenterTest.swift; sourceTree = "<group>"; };
+		1981D6A92C0A735B00D60F8B /* ChooserScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserScreenView.swift; sourceTree = "<group>"; };
+		1981D6AC2C0A741900D60F8B /* Browser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		19E1A0711FF7E1180072376A /* Frameworks */ = {
+		19626B9A2C0881C30034D54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1914FE292C1B782800F32B05 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19626BAB2C0881C50034D54F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19E940B91E8EEACC003F354A /* Frameworks */ = {
+		19626BB52C0881C50034D54F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,236 +93,296 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19E1A0751FF7E1180072376A /* BrowsyTests */ = {
+		19626B942C0881C30034D54F = {
 			isa = PBXGroup;
 			children = (
-				19E1A0761FF7E1180072376A /* BrowsyTests.swift */,
-				19E1A0781FF7E1180072376A /* Info.plist */,
-			);
-			path = BrowsyTests;
-			sourceTree = "<group>";
-		};
-		19E940B31E8EEACC003F354A = {
-			isa = PBXGroup;
-			children = (
-				19E940BE1E8EEACC003F354A /* Browsy */,
-				19E1A0751FF7E1180072376A /* BrowsyTests */,
-				19E940BD1E8EEACC003F354A /* Products */,
+				19626B9F2C0881C30034D54F /* Browsy */,
+				19626BB12C0881C50034D54F /* BrowsyTests */,
+				19626BBB2C0881C50034D54F /* BrowsyUITests */,
+				19626B9E2C0881C30034D54F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		19E940BD1E8EEACC003F354A /* Products */ = {
+		19626B9E2C0881C30034D54F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				19E940BC1E8EEACC003F354A /* Browsy.app */,
-				19E1A0741FF7E1180072376A /* BrowsyTests.xctest */,
+				19626B9D2C0881C30034D54F /* Browsy.app */,
+				19626BAE2C0881C50034D54F /* BrowsyTests.xctest */,
+				19626BB82C0881C50034D54F /* BrowsyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		19E940BE1E8EEACC003F354A /* Browsy */ = {
+		19626B9F2C0881C30034D54F /* Browsy */ = {
 			isa = PBXGroup;
 			children = (
-				19BCEE661E8FC82500871C0A /* ViewController.swift */,
-				19E940BF1E8EEACC003F354A /* AppDelegate.swift */,
-				19E940C31E8EEACC003F354A /* Assets.xcassets */,
-				19E940C51E8EEACC003F354A /* Main.storyboard */,
-				19E940C81E8EEACC003F354A /* Info.plist */,
+				1981D6AB2C0A73E400D60F8B /* BrowserManager */,
+				1981D6A52C0A63FD00D60F8B /* ChooserScreen */,
+				1970195E2C08C28000D63B8E /* Info.plist */,
+				19626BA02C0881C30034D54F /* BrowsyApp.swift */,
+				19626BA42C0881C40034D54F /* Assets.xcassets */,
+				19626BA92C0881C40034D54F /* Browsy.entitlements */,
+				19626BA62C0881C40034D54F /* Preview Content */,
+				1979A8C72C09BC2300E3E062 /* Dependencies.swift */,
+				1979A8CB2C09D51000E3E062 /* BrowsyAppDelegate.swift */,
+				194634C82C0BB1AE002F8AFE /* MenuView.swift */,
 			);
 			path = Browsy;
+			sourceTree = "<group>";
+		};
+		19626BA62C0881C40034D54F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				19626BA72C0881C40034D54F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		19626BB12C0881C50034D54F /* BrowsyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1981D6A82C0A67C200D60F8B /* ChooserScreen */,
+				19626BB22C0881C50034D54F /* BrowsyTests.swift */,
+			);
+			path = BrowsyTests;
+			sourceTree = "<group>";
+		};
+		19626BBB2C0881C50034D54F /* BrowsyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19626BBC2C0881C50034D54F /* BrowsyUITests.swift */,
+				19626BBE2C0881C50034D54F /* BrowsyUITestsLaunchTests.swift */,
+			);
+			path = BrowsyUITests;
+			sourceTree = "<group>";
+		};
+		1981D6A52C0A63FD00D60F8B /* ChooserScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1979A8C92C09CAD900E3E062 /* ChooserWindowManager.swift */,
+				197019572C08AA8800D63B8E /* ChooserScreenBindingView.swift */,
+				1979A8C32C09B58000E3E062 /* ChooserScreenPresenter.swift */,
+				1981D6A92C0A735B00D60F8B /* ChooserScreenView.swift */,
+			);
+			path = ChooserScreen;
+			sourceTree = "<group>";
+		};
+		1981D6A82C0A67C200D60F8B /* ChooserScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1981D6A62C0A662000D60F8B /* ChooserScreenPresenterTest.swift */,
+			);
+			path = ChooserScreen;
+			sourceTree = "<group>";
+		};
+		1981D6AB2C0A73E400D60F8B /* BrowserManager */ = {
+			isa = PBXGroup;
+			children = (
+				1979A8C52C09B6BA00E3E062 /* BrowserManager.swift */,
+				1981D6AC2C0A741900D60F8B /* Browser.swift */,
+			);
+			path = BrowserManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		19E1A0731FF7E1180072376A /* BrowsyTests */ = {
+		19626B9C2C0881C30034D54F /* Browsy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19E1A07D1FF7E1180072376A /* Build configuration list for PBXNativeTarget "BrowsyTests" */;
+			buildConfigurationList = 19626BC22C0881C50034D54F /* Build configuration list for PBXNativeTarget "Browsy" */;
 			buildPhases = (
-				19E1A0701FF7E1180072376A /* Sources */,
-				19E1A0711FF7E1180072376A /* Frameworks */,
-				19E1A0721FF7E1180072376A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				19E1A07A1FF7E1180072376A /* PBXTargetDependency */,
-			);
-			name = BrowsyTests;
-			productName = BrowsyTests;
-			productReference = 19E1A0741FF7E1180072376A /* BrowsyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		19E940BB1E8EEACC003F354A /* Browsy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 19E940CB1E8EEACC003F354A /* Build configuration list for PBXNativeTarget "Browsy" */;
-			buildPhases = (
-				19E940B81E8EEACC003F354A /* Sources */,
-				19E940B91E8EEACC003F354A /* Frameworks */,
-				19E940BA1E8EEACC003F354A /* Resources */,
+				19626B992C0881C30034D54F /* Sources */,
+				19626B9A2C0881C30034D54F /* Frameworks */,
+				19626B9B2C0881C30034D54F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Browsy;
+			packageProductDependencies = (
+				1914FE282C1B782800F32B05 /* Sparkle */,
+			);
 			productName = Browsy;
-			productReference = 19E940BC1E8EEACC003F354A /* Browsy.app */;
+			productReference = 19626B9D2C0881C30034D54F /* Browsy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		19626BAD2C0881C50034D54F /* BrowsyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19626BC52C0881C50034D54F /* Build configuration list for PBXNativeTarget "BrowsyTests" */;
+			buildPhases = (
+				19626BAA2C0881C50034D54F /* Sources */,
+				19626BAB2C0881C50034D54F /* Frameworks */,
+				19626BAC2C0881C50034D54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19626BB02C0881C50034D54F /* PBXTargetDependency */,
+			);
+			name = BrowsyTests;
+			productName = BrowsyTests;
+			productReference = 19626BAE2C0881C50034D54F /* BrowsyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19626BB72C0881C50034D54F /* BrowsyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19626BC82C0881C50034D54F /* Build configuration list for PBXNativeTarget "BrowsyUITests" */;
+			buildPhases = (
+				19626BB42C0881C50034D54F /* Sources */,
+				19626BB52C0881C50034D54F /* Frameworks */,
+				19626BB62C0881C50034D54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19626BBA2C0881C50034D54F /* PBXTargetDependency */,
+			);
+			name = BrowsyUITests;
+			productName = BrowsyUITests;
+			productReference = 19626BB82C0881C50034D54F /* BrowsyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		19E940B41E8EEACC003F354A /* Project object */ = {
+		19626B952C0881C30034D54F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = kJulio;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					19E1A0731FF7E1180072376A = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 19E940BB1E8EEACC003F354A;
+					19626B9C2C0881C30034D54F = {
+						CreatedOnToolsVersion = 15.4;
 					};
-					19E940BB1E8EEACC003F354A = {
-						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = C4T5VAUNJX;
-						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
+					19626BAD2C0881C50034D54F = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 19626B9C2C0881C30034D54F;
+					};
+					19626BB72C0881C50034D54F = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 19626B9C2C0881C30034D54F;
 					};
 				};
 			};
-			buildConfigurationList = 19E940B71E8EEACC003F354A /* Build configuration list for PBXProject "Browsy" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 19626B982C0881C30034D54F /* Build configuration list for PBXProject "Browsy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 19E940B31E8EEACC003F354A;
-			productRefGroup = 19E940BD1E8EEACC003F354A /* Products */;
+			mainGroup = 19626B942C0881C30034D54F;
+			packageReferences = (
+				1914FE272C1B782800F32B05 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			productRefGroup = 19626B9E2C0881C30034D54F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19E940BB1E8EEACC003F354A /* Browsy */,
-				19E1A0731FF7E1180072376A /* BrowsyTests */,
+				19626B9C2C0881C30034D54F /* Browsy */,
+				19626BAD2C0881C50034D54F /* BrowsyTests */,
+				19626BB72C0881C50034D54F /* BrowsyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		19E1A0721FF7E1180072376A /* Resources */ = {
+		19626B9B2C0881C30034D54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19626BA82C0881C40034D54F /* Preview Assets.xcassets in Resources */,
+				19626BA52C0881C40034D54F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19626BAC2C0881C50034D54F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19E940BA1E8EEACC003F354A /* Resources */ = {
+		19626BB62C0881C50034D54F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E940C41E8EEACC003F354A /* Assets.xcassets in Resources */,
-				19E940C71E8EEACC003F354A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		19E1A0701FF7E1180072376A /* Sources */ = {
+		19626B992C0881C30034D54F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E1A0771FF7E1180072376A /* BrowsyTests.swift in Sources */,
+				1979A8CC2C09D51000E3E062 /* BrowsyAppDelegate.swift in Sources */,
+				194634C92C0BB1AE002F8AFE /* MenuView.swift in Sources */,
+				1979A8C82C09BC2300E3E062 /* Dependencies.swift in Sources */,
+				1981D6AA2C0A735B00D60F8B /* ChooserScreenView.swift in Sources */,
+				1979A8CA2C09CAD900E3E062 /* ChooserWindowManager.swift in Sources */,
+				197019582C08AA8800D63B8E /* ChooserScreenBindingView.swift in Sources */,
+				1979A8C62C09B6BA00E3E062 /* BrowserManager.swift in Sources */,
+				1981D6AD2C0A741900D60F8B /* Browser.swift in Sources */,
+				1979A8C42C09B58000E3E062 /* ChooserScreenPresenter.swift in Sources */,
+				19626BA12C0881C30034D54F /* BrowsyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19E940B81E8EEACC003F354A /* Sources */ = {
+		19626BAA2C0881C50034D54F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BCEE671E8FC82500871C0A /* ViewController.swift in Sources */,
-				19E940C01E8EEACC003F354A /* AppDelegate.swift in Sources */,
+				1981D6A72C0A662000D60F8B /* ChooserScreenPresenterTest.swift in Sources */,
+				19626BB32C0881C50034D54F /* BrowsyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19626BB42C0881C50034D54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19626BBF2C0881C50034D54F /* BrowsyUITestsLaunchTests.swift in Sources */,
+				19626BBD2C0881C50034D54F /* BrowsyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		19E1A07A1FF7E1180072376A /* PBXTargetDependency */ = {
+		19626BB02C0881C50034D54F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 19E940BB1E8EEACC003F354A /* Browsy */;
-			targetProxy = 19E1A0791FF7E1180072376A /* PBXContainerItemProxy */;
+			target = 19626B9C2C0881C30034D54F /* Browsy */;
+			targetProxy = 19626BAF2C0881C50034D54F /* PBXContainerItemProxy */;
+		};
+		19626BBA2C0881C50034D54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19626B9C2C0881C30034D54F /* Browsy */;
+			targetProxy = 19626BB92C0881C50034D54F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		19E940C51E8EEACC003F354A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19E940C61E8EEACC003F354A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		19E1A07B1FF7E1180072376A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = BrowsyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = net.kjulio.BrowsyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browsy.app/Contents/MacOS/Browsy";
-			};
-			name = Debug;
-		};
-		19E1A07C1FF7E1180072376A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = BrowsyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = net.kjulio.BrowsyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browsy.app/Contents/MacOS/Browsy";
-			};
-			name = Release;
-		};
-		19E940C91E8EEACC003F354A /* Debug */ = {
+		19626BC02C0881C50034D54F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -291,19 +390,22 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -317,29 +419,33 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		19E940CA1E8EEACC003F354A /* Release */ = {
+		19626BC12C0881C50034D54F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -347,19 +453,22 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -367,74 +476,208 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
-		19E940CC1E8EEACC003F354A /* Debug */ = {
+		19626BC32C0881C50034D54F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Browsy/Browsy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Browsy/Preview Content\"";
 				DEVELOPMENT_TEAM = C4T5VAUNJX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Browsy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.kjulio.Browsy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.marcoromano.Browsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		19E940CD1E8EEACC003F354A /* Release */ = {
+		19626BC42C0881C50034D54F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Browsy/Browsy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Browsy/Preview Content\"";
 				DEVELOPMENT_TEAM = C4T5VAUNJX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Browsy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.kjulio.Browsy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.marcoromano.Browsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		19626BC62C0881C50034D54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4T5VAUNJX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.marcoromano.BrowsyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browsy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Browsy";
+			};
+			name = Debug;
+		};
+		19626BC72C0881C50034D54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4T5VAUNJX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.marcoromano.BrowsyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browsy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Browsy";
+			};
+			name = Release;
+		};
+		19626BC92C0881C50034D54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4T5VAUNJX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.marcoromano.BrowsyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Browsy;
+			};
+			name = Debug;
+		};
+		19626BCA2C0881C50034D54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4T5VAUNJX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.marcoromano.BrowsyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Browsy;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		19E1A07D1FF7E1180072376A /* Build configuration list for PBXNativeTarget "BrowsyTests" */ = {
+		19626B982C0881C30034D54F /* Build configuration list for PBXProject "Browsy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19E1A07B1FF7E1180072376A /* Debug */,
-				19E1A07C1FF7E1180072376A /* Release */,
+				19626BC02C0881C50034D54F /* Debug */,
+				19626BC12C0881C50034D54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19E940B71E8EEACC003F354A /* Build configuration list for PBXProject "Browsy" */ = {
+		19626BC22C0881C50034D54F /* Build configuration list for PBXNativeTarget "Browsy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19E940C91E8EEACC003F354A /* Debug */,
-				19E940CA1E8EEACC003F354A /* Release */,
+				19626BC32C0881C50034D54F /* Debug */,
+				19626BC42C0881C50034D54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19E940CB1E8EEACC003F354A /* Build configuration list for PBXNativeTarget "Browsy" */ = {
+		19626BC52C0881C50034D54F /* Build configuration list for PBXNativeTarget "BrowsyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19E940CC1E8EEACC003F354A /* Debug */,
-				19E940CD1E8EEACC003F354A /* Release */,
+				19626BC62C0881C50034D54F /* Debug */,
+				19626BC72C0881C50034D54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19626BC82C0881C50034D54F /* Build configuration list for PBXNativeTarget "BrowsyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19626BC92C0881C50034D54F /* Debug */,
+				19626BCA2C0881C50034D54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1914FE272C1B782800F32B05 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1914FE282C1B782800F32B05 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1914FE272C1B782800F32B05 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 19E940B41E8EEACC003F354A /* Project object */;
+	rootObject = 19626B952C0881C30034D54F /* Project object */;
 }
