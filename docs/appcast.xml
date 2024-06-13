@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Browsy</title>
+        <item>
+            <title>0.1</title>
+            <pubDate>Thu, 13 Jun 2024 23:05:03 +0200</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/julioromano/Browsy/releases/download/0.1/Browsy.zip" length="1058070" type="application/octet-stream" sparkle:edSignature="2Xw4S5Bb9IUR2Az80V/xT7tiHXyZzmOGla/eAj/j9Wa2T8wnhFDmPjQJlv4sZTWEVQ1WSMoJhmcg+f5ESqcSBg=="/>
+        </item>
+    </channel>
+</rss>
