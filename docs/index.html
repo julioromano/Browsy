@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Browsy App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
 </head>
-<body>
-    <h1>Hello World</h1>
+
+<body class="gradient flex flex-col items-center justify-center h-screen text-white">
+    <div class="bg-white shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4 m-4">
+        <div class="mb-4 text-center">
+            <h2 class="font-bold text-4xl mb-2 text-black">Browsy App</h2>
+            <img src="assets/logo.png" alt="Browsy Logo" class="mx-auto h-24 w-24">
+            <p class="text-gray-700 text-lg font-semibold text-center">Your ultimate browsing companion.</p>
+        </div>
+        <div class="mb-6">
+            <p class="text-gray-700 text-base text-center mt-4">A Mac OS utility that allows to choose with which
+                browser to open a hyperlink.</p>
+        </div>
+        <div class="flex items-center justify-center">
+            <a href="https://github.com/julioromano/Browsy/releases/latest/download/Browsy.zip"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">
+                Download
+            </a>
+        </div>
+    </div>
+    <footer class="fixed bottom-0 left-0 right-0 text-center py-3">
+        <a href="https://github.com/julioromano/Browsy"
+            class="inline-block bg-black text-white font-bold py-1 px-2 rounded-lg text-sm">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"
+                class="inline-block h-4 w-4 mr-1">
+            View on GitHub
+        </a>
+        <p id="copyright" class="mt-2 text-sm text-white"></p>
+    </footer>
+
+    <script>
+        document.getElementById('copyright').innerHTML = `© <a href="https://marcoromano.net" class="text-white underline">Marco Romano</a> ${new Date().getFullYear()}`;
+    </script>
 </body>
+
 </html>
